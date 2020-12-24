@@ -33,12 +33,12 @@
         "FunctionName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "Payment",
+            "processPayment",
             {
               "Fn::Join": [
                 "",
                 [
-                  "Payment",
+                  "processPayment",
                   "-",
                   {
                     "Ref": "env"
@@ -68,8 +68,8 @@
         "Layers": [],
         "Timeout": "25",
         "Code": {
-          "S3Bucket": "amplify-mybookstore-prod-142140-deployment",
-          "S3Key": "amplify-builds/Payment-54635437336943317378-build.zip"
+          "S3Bucket": "amplify-mybookstore-pro-181314-deployment",
+          "S3Key": "amplify-builds/processPayment-5454544c7450354c4746-build.zip"
         }
       }
     },
@@ -79,12 +79,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "mybookstoreLambdaRole18450591",
+            "mybookstoreLambdaRole46a5dee2",
             {
               "Fn::Join": [
                 "",
                 [
-                  "mybookstoreLambdaRole18450591",
+                  "mybookstoreLambdaRole46a5dee2",
                   "-",
                   {
                     "Ref": "env"

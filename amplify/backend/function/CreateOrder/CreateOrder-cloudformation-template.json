@@ -68,8 +68,8 @@
         "Layers": [],
         "Timeout": "25",
         "Code": {
-          "S3Bucket": "amplify-mybookstore-prod-142140-deployment",
-          "S3Key": "amplify-builds/CreateOrder-51386d505a336e484133-build.zip"
+          "S3Bucket": "amplify-mybookstore-pro-181314-deployment",
+          "S3Key": "amplify-builds/CreateOrder-6e6e535a514a577a692b-build.zip"
         }
       }
     },
@@ -79,12 +79,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "mybookstoreLambdaRoleb617ba78",
+            "mybookstoreLambdaRole15f3eac3",
             {
               "Fn::Join": [
                 "",
                 [
-                  "mybookstoreLambdaRoleb617ba78",
+                  "mybookstoreLambdaRole15f3eac3",
                   "-",
                   {
                     "Ref": "env"

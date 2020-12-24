@@ -79,6 +79,6 @@ input ProcessOrderInput {
 
 type Mutation {
   processOrder(input: ProcessOrderInput!): OrderStatus
-    @function(name: "Payment-${env}")
+    @function(name: "processPayment-${env}")
     @function(name: "createOrder-${env}")
 }

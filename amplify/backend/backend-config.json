@@ -1,6 +1,6 @@
 {
   "auth": {
-    "mybookstore977998a5": {
+    "mybookstore1ae33d52": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
@@ -8,13 +8,13 @@
     }
   },
   "storage": {
-    "mybookimages308": {
+    "mys3storage": {
       "service": "S3",
       "providerPlugin": "awscloudformation"
     }
   },
   "function": {
-    "Payment": {
+    "processPayment": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
@@ -26,7 +26,7 @@
     }
   },
   "api": {
-    "mybookstoreapi": {
+    "mybookstore": {
       "service": "AppSync",
       "providerPlugin": "awscloudformation",
       "output": {
@@ -34,10 +34,18 @@
           "defaultAuthentication": {
             "authenticationType": "AMAZON_COGNITO_USER_POOLS",
             "userPoolConfig": {
-              "userPoolId": "authmybookstore977998a5"
+              "userPoolId": "authmybookstore1ae33d52"
             }
           },
-          "additionalAuthenticationProviders": []
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "API_KEY",
+              "apiKeyConfig": {
+                "apiKeyExpirationDays": 7,
+                "description": "mystoreAPI"
+              }
+            }
+          ]
         }
       }
     }

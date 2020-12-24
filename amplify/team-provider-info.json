@@ -1,19 +1,19 @@
 {
-  "prod": {
+  "pro": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-mybookstore-prod-142140-authRole",
-      "UnauthRoleArn": "arn:aws:iam::915703537896:role/amplify-mybookstore-prod-142140-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::915703537896:role/amplify-mybookstore-prod-142140-authRole",
+      "AuthRoleName": "amplify-mybookstore-pro-181314-authRole",
+      "UnauthRoleArn": "arn:aws:iam::915703537896:role/amplify-mybookstore-pro-181314-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::915703537896:role/amplify-mybookstore-pro-181314-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-mybookstore-prod-142140-deployment",
-      "UnauthRoleName": "amplify-mybookstore-prod-142140-unauthRole",
-      "StackName": "amplify-mybookstore-prod-142140",
-      "StackId": "arn:aws:cloudformation:us-east-1:915703537896:stack/amplify-mybookstore-prod-142140/16756390-4387-11eb-9807-0ebb325b25bf",
-      "AmplifyAppId": "d2zvgry52h5ueu"
+      "DeploymentBucketName": "amplify-mybookstore-pro-181314-deployment",
+      "UnauthRoleName": "amplify-mybookstore-pro-181314-unauthRole",
+      "StackName": "amplify-mybookstore-pro-181314",
+      "StackId": "arn:aws:cloudformation:us-east-1:915703537896:stack/amplify-mybookstore-pro-181314/ef6e6340-4602-11eb-9e43-124e2698d6a5",
+      "AmplifyAppId": "dc73gctumz0iw"
     },
     "categories": {
       "auth": {
-        "mybookstore977998a5": {}
+        "mybookstore1ae33d52": {}
       }
     }
   }
